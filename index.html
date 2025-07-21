@@ -5,9 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>KSD Footwear | چارسدہ چپل</title>
   <meta name="description" content="KSD Footwear - اعلی معیار کی چارسدہ چپلیں۔" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="favicon.ico" />
+
+  <!-- ✅ CSS linked from assets/css -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- ✅ Favicon (optional, put in root or assets/images/) -->
+  <link rel="icon" href="assets/images/favicon.ico" />
+
+  <!-- ✅ Google Urdu Font -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet" />
+
+  <!-- ✅ Optional custom font in assets/fonts (example only) -->
+  <style>
+    @font-face {
+      font-family: 'CustomKSD';
+      src: url('assets/fonts/custom-ksd.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    body {
+      font-family: 'Noto Nastaliq Urdu', 'CustomKSD', serif;
+    }
+  </style>
 </head>
 <body>
 
@@ -29,6 +48,11 @@
   <!-- Hero Section -->
   <main>
     <section class="hero">
+
+      <!-- ✅ Optional background image from assets/images -->
+      <!-- Add styling in CSS to use this image -->
+      <!-- Example: background-image: url('../images/wood-bg.jpg'); -->
+
       <h1>چارسدہ چپل کے ساتھ روایت اور آرام کا امتزاج</h1>
       <p>KSD Footwear میں خوش آمدید - جہاں ہر قدم روایت سے جُڑا ہوا ہے۔</p>
       <a href="#" class="btn btn-primary">ابھی خریداری کریں</a>
