@@ -1,103 +1,65 @@
 <!DOCTYPE html>
-<html lang="ur" dir="rtl">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KSD Footwear</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Noto Naskh Arabic', serif;
-      background: #f3e5c2;
-      color: #3b2e2e;
-    }
-    header {
-      background: #a1865e;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-    }
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .about {
-      background-color: #f8f1e4;
-      padding: 1.5rem;
-      border-radius: 10px;
-      margin-bottom: 2rem;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-      font-size: 1.2rem;
-      line-height: 2;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.2);
-    }
-    .contact {
-      margin-top: 3rem;
-      background: #e6d3b3;
-      padding: 1.5rem;
-      border-radius: 10px;
-      font-size: 1.1rem;
-      direction: ltr;
-    }
-    .contact a {
-      color: #3b2e2e;
-      text-decoration: none;
-    }
-    footer {
-      background: #a1865e;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="KSD Footwear - Premium quality shoes to elevate your style and comfort." />
+  <meta name="keywords" content="footwear, shoes, sneakers, boots, running shoes, KSD" />
+  <meta name="author" content="KSD Footwear" />
+  <title>KSD Footwear | Premium Shoes for Everyone</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
-  <header>
-    <h1>KSD Footwear</h1>
-    <p>مقامی ورثہ، روایات سے جُڑا</p>
+  <header role="banner">
+    <nav role="navigation" class="navbar">
+      <a href="#" class="logo" aria-label="KSD Footwear Home">KSD Footwear</a>
+      <ul class="nav-links" role="menubar" aria-label="Primary navigation">
+        <li role="none"><a role="menuitem" href="#" tabindex="0">Home</a></li>
+        <li role="none"><a role="menuitem" href="#" tabindex="0">Shop</a></li>
+        <li role="none"><a role="menuitem" href="#" tabindex="0">About</a></li>
+        <li role="none"><a role="menuitem" href="#" tabindex="0">Contact</a></li>
+      </ul>
+      <a href="#" class="cart-link" aria-label="Shopping Cart" tabindex="0">🛒 Cart</a>
+    </nav>
   </header>
 
-  <section class="about">
-    <p>
-      چارسدہ کی مٹی سے جڑا ہوا، ہاتھ سے بنا ہوا ثقافتی ورثہ۔ <strong>کے ایس ڈی</strong> کے پیش کردہ اعلیٰ معیار کے پشاوری اور روایتی چپل۔  آرام، انداز اور روایت — ہر قدم کے ساتھ۔
-    </p>
-  </section>
+  <main role="main">
+    <section class="hero" aria-label="Featured Collection">
+      <h1>Step into Comfort &amp; Style</h1>
+      <p>Discover our latest collection of premium footwear designed for every step you take.</p>
+      <a href="#" class="btn btn-primary" role="button">Shop Now</a>
+    </section>
 
-  <section class="gallery">
-    <!-- Placeholder images to be replaced -->
-    <img src="https://via.placeholder.com/400x300?text=Footwear+1" alt="Footwear 1">
-    <img src="https://via.placeholder.com/400x300?text=Footwear+2" alt="Footwear 2">
-    <img src="https://via.placeholder.com/400x300?text=Footwear+3" alt="Footwear 3">
-  </section>
+    <section class="products" aria-label="Featured Products">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <article class="product-card" tabindex="0" aria-label="Classic Black Sneakers for $99.99">
+          <img src="product1.jpg" alt="Classic Black Sneakers" loading="lazy" />
+          <h3>Classic Black Sneakers</h3>
+          <p class="price">$99.99</p>
+          <a href="#" class="btn btn-secondary" role="button">View Details</a>
+        </article>
 
-  <section class="contact">
-    <p><strong>📍 Address:</strong> Charsadda, Pakistan</p>
-    <p><strong>📞 WhatsApp:</strong> <a href="https://wa.me/923259398620">+92 325 9398620</a></p>
-    <p><strong>📧 Email:</strong> <a href="mailto:ksdfootwear.1@gmail.com">ksdfootwear.1@gmail.com</a></p>
-    <p><strong>🌐 Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61578282837916">KSD Footwear Page</a></p>
-  </section>
+        <article class="product-card" tabindex="0" aria-label="Leather Boots for $129.99">
+          <img src="product2.jpg" alt="Leather Boots" loading="lazy" />
+          <h3>Leather Boots</h3>
+          <p class="price">$129.99</p>
+          <a href="#" class="btn btn-secondary" role="button">View Details</a>
+        </article>
 
-  <footer>
-    &copy; 2025 KSD Footwear. All rights reserved.
+        <article class="product-card" tabindex="0" aria-label="Running Shoes for $89.99">
+          <img src="product3.jpg" alt="Running Shoes" loading="lazy" />
+          <h3>Running Shoes</h3>
+          <p class="price">$89.99</p>
+          <a href="#" class="btn btn-secondary" role="button">View Details</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 KSD Footwear. All rights reserved.</p>
   </footer>
 </body>
 </html>
