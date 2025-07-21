@@ -1,26 +1,100 @@
-.logo {
-  font-family: var(--font-family-latin);
-  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
-  font-weight: 700;
-  color: #fdf6e3;
-  text-decoration: none;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+
+:root {
+  --color-primary: #a97142;
+  --color-primary-dark: #7c5232;
+  --color-light: #fdf6e3;
+  --color-text: #3b2e2a;
+  --font-urdu: 'Noto Nastaliq Urdu', serif;
+  --font-latin: 'Segoe UI', sans-serif;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  direction: rtl;
+  font-size: 16px;
+}
+body {
+  font-family: var(--font-urdu);
+  background: url('https://www.transparenttextures.com/patterns/wood-pattern.png') repeat;
+  background-color: var(--color-light);
+  color: var(--color-text);
+}
+
+/* Header */
+.navbar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-primary-dark);
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
   gap: 0.3rem;
 }
 
 .logo-ksd {
-  font-family: 'Brush Script MT', cursive, 'Segoe Script', cursive;
-  font-size: 2.8rem;
-  color: var(--color-primary);
-  font-weight: 900;
-  text-shadow: 2px 2px 4px rgba(124, 82, 50, 0.6);
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2.4rem;
+  color: #fff8e1;
+  font-weight: bold;
+}
+.logo-footwear {
+  font-family: var(--font-latin);
+  font-size: 1.3rem;
+  color: #fff8e1;
 }
 
-.logo-footwear {
-  font-family: var(--font-family-latin);
-  font-size: 1.6rem;
-  color: #fdf6e3;
-  font-weight: 400;
-  letter-spacing: 1.5px;
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.nav-links a:hover {
+  color: var(--color-primary);
+}
+
+.cart-link {
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
 }
